@@ -13,3 +13,9 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World"
+        second-job:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Print Second Hello
+      run: echo "Hello World from second job"
